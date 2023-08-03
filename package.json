@@ -8,7 +8,7 @@
 	},
 	"scripts": {
 		"build": "npm run clean && npm run compile && npm run gulp:build && npm run webpack:build",
-		"clean": "rimraf uploads dist public/css/*.css public/js/*.js",
+		"clean": "rimraf -g uploads dist public/css/*.css public/js/*.js",
 		"compile": "tsc",
 		"debug": "nodemon",
 		"dev": "concurrently \"npm run debug\" \"npm run webpack:watch\" \"npm run gulp:watch\"",
